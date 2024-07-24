@@ -6,52 +6,42 @@
 //
 
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @State private var text: String = ""
+    @State private var cursorPosition: Int = 0
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
+        VStack {
+            TextEditor(text: $text)
+                .disabled(true) // Disable default keyboard
+                .background(Color.gray.opacity(0.1))
+                .cornerRadius(8)
+                .frame(height: 100)
+            
+            HStack {
+                Button(action: moveCursorLeft) {
+                    Image(systemName: "arrow.left")
                 }
-                .onDelete(perform: deleteItems)
+                .padding()
+                
+                Button(action: moveCursorRight) {
+                    Image(systemName: "arrow.right")
+                }
+                .padding()
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
+            
+            CustomKeyboardView()
         }
+        .padding()
     }
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
+    private func moveCursorLeft() {
+        cursorPosition = max(cursorPosition - 1, 0)
     }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
+    
+    private func moveCursorRight() {
+        cursorPosition = min(cursorPosition + 1, text.count)
     }
 }
 

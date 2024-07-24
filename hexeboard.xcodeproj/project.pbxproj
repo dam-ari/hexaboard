@@ -12,7 +12,78 @@
 		BAF4B78B2C51566D00024EBE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF4B78A2C51566D00024EBE /* Item.swift */; };
 		BAF4B78D2C51566E00024EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF4B78C2C51566E00024EBE /* Assets.xcassets */; };
 		BAF4B7902C51566E00024EBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF4B78F2C51566E00024EBE /* Preview Assets.xcassets */; };
+		BAF4B7982C51569C00024EBE /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF4B7972C51569C00024EBE /* KeyboardButton.swift */; };
+		BAF4B79A2C51570400024EBE /* CustomKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF4B7992C51570400024EBE /* CustomKeyboardView.swift */; };
+		BAF4B79C2C515C0800024EBE /* ABCButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF4B79B2C515C0800024EBE /* ABCButtons.swift */; };
+		BAF4B79E2C51629700024EBE /* prev.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF4B79D2C51629700024EBE /* prev.swift */; };
+		BAF4B7B02C517F7E00024EBE /* hexoboard Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BAF4B7A32C517F7D00024EBE /* hexoboard Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BAF4B7BD2C518A1200024EBE /* hexoboard Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BAF4B7BC2C518A1200024EBE /* hexoboard Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BAF4B7DA2C518AE900024EBE /* hexoboard Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BAF4B7D92C518AE900024EBE /* hexoboard Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BAF4B7DF2C518AE900024EBE /* hexoboard_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF4B7DE2C518AE900024EBE /* hexoboard_WatchApp.swift */; };
+		BAF4B7E12C518AE900024EBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF4B7E02C518AE900024EBE /* ContentView.swift */; };
+		BAF4B7E32C518AEA00024EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF4B7E22C518AEA00024EBE /* Assets.xcassets */; };
+		BAF4B7E62C518AEA00024EBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF4B7E52C518AEA00024EBE /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAF4B7AE2C517F7E00024EBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAF4B77B2C51566D00024EBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAF4B7A22C517F7D00024EBE;
+			remoteInfo = "hexoboard Watch App";
+		};
+		BAF4B7BE2C518A1200024EBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAF4B77B2C51566D00024EBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAF4B7BB2C518A1200024EBE;
+			remoteInfo = "hexoboard Watch App";
+		};
+		BAF4B7DB2C518AE900024EBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAF4B77B2C51566D00024EBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAF4B7D82C518AE900024EBE;
+			remoteInfo = "hexoboard Watch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAF4B7B42C517F7E00024EBE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BAF4B7B02C517F7E00024EBE /* hexoboard Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF4B7CD2C518A1400024EBE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BAF4B7BD2C518A1200024EBE /* hexoboard Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF4B7EA2C518AEA00024EBE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BAF4B7DA2C518AE900024EBE /* hexoboard Watch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BAF4B7832C51566D00024EBE /* hexeboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hexeboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +92,44 @@
 		BAF4B78A2C51566D00024EBE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BAF4B78C2C51566E00024EBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAF4B78F2C51566E00024EBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAF4B7972C51569C00024EBE /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
+		BAF4B7992C51570400024EBE /* CustomKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboardView.swift; sourceTree = "<group>"; };
+		BAF4B79B2C515C0800024EBE /* ABCButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABCButtons.swift; sourceTree = "<group>"; };
+		BAF4B79D2C51629700024EBE /* prev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prev.swift; sourceTree = "<group>"; };
+		BAF4B7A32C517F7D00024EBE /* hexoboard Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hexoboard Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF4B7B72C518A1200024EBE /* hexoboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hexoboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF4B7BC2C518A1200024EBE /* hexoboard Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hexoboard Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF4B7D42C518AE900024EBE /* hexoboard Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hexoboard Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF4B7D92C518AE900024EBE /* hexoboard Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hexoboard Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF4B7DE2C518AE900024EBE /* hexoboard_WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hexoboard_WatchApp.swift; sourceTree = "<group>"; };
+		BAF4B7E02C518AE900024EBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BAF4B7E22C518AEA00024EBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAF4B7E52C518AEA00024EBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BAF4B7802C51566D00024EBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF4B7A02C517F7D00024EBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF4B7B92C518A1200024EBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF4B7D62C518AE900024EBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				BAF4B7852C51566D00024EBE /* hexeboard */,
+				BAF4B7DD2C518AE900024EBE /* hexoboard Watch Watch App */,
 				BAF4B7842C51566D00024EBE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +152,11 @@
 			isa = PBXGroup;
 			children = (
 				BAF4B7832C51566D00024EBE /* hexeboard.app */,
+				BAF4B7A32C517F7D00024EBE /* hexoboard Watch App.app */,
+				BAF4B7B72C518A1200024EBE /* hexoboard.app */,
+				BAF4B7BC2C518A1200024EBE /* hexoboard Watch App.app */,
+				BAF4B7D42C518AE900024EBE /* hexoboard Watch.app */,
+				BAF4B7D92C518AE900024EBE /* hexoboard Watch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +164,7 @@
 		BAF4B7852C51566D00024EBE /* hexeboard */ = {
 			isa = PBXGroup;
 			children = (
+				BAF4B7962C51568E00024EBE /* views */,
 				BAF4B7862C51566D00024EBE /* hexeboardApp.swift */,
 				BAF4B7882C51566D00024EBE /* ContentView.swift */,
 				BAF4B78A2C51566D00024EBE /* Item.swift */,
@@ -70,6 +182,36 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		BAF4B7962C51568E00024EBE /* views */ = {
+			isa = PBXGroup;
+			children = (
+				BAF4B7972C51569C00024EBE /* KeyboardButton.swift */,
+				BAF4B7992C51570400024EBE /* CustomKeyboardView.swift */,
+				BAF4B79D2C51629700024EBE /* prev.swift */,
+				BAF4B79B2C515C0800024EBE /* ABCButtons.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		BAF4B7DD2C518AE900024EBE /* hexoboard Watch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				BAF4B7DE2C518AE900024EBE /* hexoboard_WatchApp.swift */,
+				BAF4B7E02C518AE900024EBE /* ContentView.swift */,
+				BAF4B7E22C518AEA00024EBE /* Assets.xcassets */,
+				BAF4B7E42C518AEA00024EBE /* Preview Content */,
+			);
+			path = "hexoboard Watch Watch App";
+			sourceTree = "<group>";
+		};
+		BAF4B7E42C518AEA00024EBE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BAF4B7E52C518AEA00024EBE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,14 +222,101 @@
 				BAF4B77F2C51566D00024EBE /* Sources */,
 				BAF4B7802C51566D00024EBE /* Frameworks */,
 				BAF4B7812C51566D00024EBE /* Resources */,
+				BAF4B7B42C517F7E00024EBE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAF4B7AF2C517F7E00024EBE /* PBXTargetDependency */,
+			);
+			name = hexeboard;
+			productName = hexeboard;
+			productReference = BAF4B7832C51566D00024EBE /* hexeboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAF4B7A22C517F7D00024EBE /* hexoboard Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF4B7B12C517F7E00024EBE /* Build configuration list for PBXNativeTarget "hexoboard Watch App" */;
+			buildPhases = (
+				BAF4B79F2C517F7D00024EBE /* Sources */,
+				BAF4B7A02C517F7D00024EBE /* Frameworks */,
+				BAF4B7A12C517F7D00024EBE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = hexeboard;
-			productName = hexeboard;
-			productReference = BAF4B7832C51566D00024EBE /* hexeboard.app */;
+			name = "hexoboard Watch App";
+			productName = "hexoboard Watch App";
+			productReference = BAF4B7A32C517F7D00024EBE /* hexoboard Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAF4B7B62C518A1200024EBE /* hexoboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF4B7CE2C518A1400024EBE /* Build configuration list for PBXNativeTarget "hexoboard" */;
+			buildPhases = (
+				BAF4B7B52C518A1200024EBE /* Resources */,
+				BAF4B7CD2C518A1400024EBE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAF4B7BF2C518A1200024EBE /* PBXTargetDependency */,
+			);
+			name = hexoboard;
+			productName = hexoboard;
+			productReference = BAF4B7B72C518A1200024EBE /* hexoboard.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		BAF4B7BB2C518A1200024EBE /* hexoboard Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF4B7CA2C518A1400024EBE /* Build configuration list for PBXNativeTarget "hexoboard Watch App" */;
+			buildPhases = (
+				BAF4B7B82C518A1200024EBE /* Sources */,
+				BAF4B7B92C518A1200024EBE /* Frameworks */,
+				BAF4B7BA2C518A1200024EBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hexoboard Watch App";
+			productName = "hexoboard Watch App";
+			productReference = BAF4B7BC2C518A1200024EBE /* hexoboard Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAF4B7D32C518AE900024EBE /* hexoboard Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF4B7EB2C518AEA00024EBE /* Build configuration list for PBXNativeTarget "hexoboard Watch" */;
+			buildPhases = (
+				BAF4B7D22C518AE900024EBE /* Resources */,
+				BAF4B7EA2C518AEA00024EBE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAF4B7DC2C518AE900024EBE /* PBXTargetDependency */,
+			);
+			name = "hexoboard Watch";
+			productName = "hexoboard Watch";
+			productReference = BAF4B7D42C518AE900024EBE /* hexoboard Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		BAF4B7D82C518AE900024EBE /* hexoboard Watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF4B7E72C518AEA00024EBE /* Build configuration list for PBXNativeTarget "hexoboard Watch Watch App" */;
+			buildPhases = (
+				BAF4B7D52C518AE900024EBE /* Sources */,
+				BAF4B7D62C518AE900024EBE /* Frameworks */,
+				BAF4B7D72C518AE900024EBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hexoboard Watch Watch App";
+			productName = "hexoboard Watch Watch App";
+			productReference = BAF4B7D92C518AE900024EBE /* hexoboard Watch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,6 +330,21 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					BAF4B7822C51566D00024EBE = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					BAF4B7A22C517F7D00024EBE = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					BAF4B7B62C518A1200024EBE = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					BAF4B7BB2C518A1200024EBE = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					BAF4B7D32C518AE900024EBE = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					BAF4B7D82C518AE900024EBE = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -119,6 +363,11 @@
 			projectRoot = "";
 			targets = (
 				BAF4B7822C51566D00024EBE /* hexeboard */,
+				BAF4B7A22C517F7D00024EBE /* hexoboard Watch App */,
+				BAF4B7B62C518A1200024EBE /* hexoboard */,
+				BAF4B7BB2C518A1200024EBE /* hexoboard Watch App */,
+				BAF4B7D32C518AE900024EBE /* hexoboard Watch */,
+				BAF4B7D82C518AE900024EBE /* hexoboard Watch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +382,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAF4B7A12C517F7D00024EBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF4B7B52C518A1200024EBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF4B7BA2C518A1200024EBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF4B7D22C518AE900024EBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF4B7D72C518AE900024EBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF4B7E62C518AEA00024EBE /* Preview Assets.xcassets in Resources */,
+				BAF4B7E32C518AEA00024EBE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,13 +426,58 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF4B7982C51569C00024EBE /* KeyboardButton.swift in Sources */,
 				BAF4B7892C51566D00024EBE /* ContentView.swift in Sources */,
 				BAF4B78B2C51566D00024EBE /* Item.swift in Sources */,
+				BAF4B79E2C51629700024EBE /* prev.swift in Sources */,
+				BAF4B79C2C515C0800024EBE /* ABCButtons.swift in Sources */,
 				BAF4B7872C51566D00024EBE /* hexeboardApp.swift in Sources */,
+				BAF4B79A2C51570400024EBE /* CustomKeyboardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF4B79F2C517F7D00024EBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF4B7B82C518A1200024EBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF4B7D52C518AE900024EBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF4B7E12C518AE900024EBE /* ContentView.swift in Sources */,
+				BAF4B7DF2C518AE900024EBE /* hexoboard_WatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAF4B7AF2C517F7E00024EBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAF4B7A22C517F7D00024EBE /* hexoboard Watch App */;
+			targetProxy = BAF4B7AE2C517F7E00024EBE /* PBXContainerItemProxy */;
+		};
+		BAF4B7BF2C518A1200024EBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAF4B7BB2C518A1200024EBE /* hexoboard Watch App */;
+			targetProxy = BAF4B7BE2C518A1200024EBE /* PBXContainerItemProxy */;
+		};
+		BAF4B7DC2C518AE900024EBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAF4B7D82C518AE900024EBE /* hexoboard Watch Watch App */;
+			targetProxy = BAF4B7DB2C518AE900024EBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BAF4B7912C51566E00024EBE /* Debug */ = {
@@ -326,6 +657,244 @@
 			};
 			name = Release;
 		};
+		BAF4B7B22C517F7E00024EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 5HR548ULA7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = hexoboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = emerald.hexeboard;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = emerald.hexeboard.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		BAF4B7B32C517F7E00024EBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 5HR548ULA7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = hexoboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = emerald.hexeboard;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = emerald.hexeboard.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		BAF4B7CB2C518A1400024EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 5HR548ULA7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = hexoboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = emerald.hexoboard.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		BAF4B7CC2C518A1400024EBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 5HR548ULA7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = hexoboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = emerald.hexoboard.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		BAF4B7CF2C518A1400024EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HR548ULA7;
+				INFOPLIST_KEY_CFBundleDisplayName = hexoboard;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = emerald.hexoboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BAF4B7D02C518A1400024EBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HR548ULA7;
+				INFOPLIST_KEY_CFBundleDisplayName = hexoboard;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = emerald.hexoboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BAF4B7E82C518AEA00024EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"hexoboard Watch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 5HR548ULA7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "hexoboard Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "emerald.hexoboard-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		BAF4B7E92C518AEA00024EBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"hexoboard Watch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 5HR548ULA7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "hexoboard Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "emerald.hexoboard-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		BAF4B7EC2C518AEA00024EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HR548ULA7;
+				INFOPLIST_KEY_CFBundleDisplayName = "hexoboard Watch";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "emerald.hexoboard-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BAF4B7ED2C518AEA00024EBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HR548ULA7;
+				INFOPLIST_KEY_CFBundleDisplayName = "hexoboard Watch";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "emerald.hexoboard-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -343,6 +912,51 @@
 			buildConfigurations = (
 				BAF4B7942C51566E00024EBE /* Debug */,
 				BAF4B7952C51566E00024EBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAF4B7B12C517F7E00024EBE /* Build configuration list for PBXNativeTarget "hexoboard Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF4B7B22C517F7E00024EBE /* Debug */,
+				BAF4B7B32C517F7E00024EBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAF4B7CA2C518A1400024EBE /* Build configuration list for PBXNativeTarget "hexoboard Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF4B7CB2C518A1400024EBE /* Debug */,
+				BAF4B7CC2C518A1400024EBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAF4B7CE2C518A1400024EBE /* Build configuration list for PBXNativeTarget "hexoboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF4B7CF2C518A1400024EBE /* Debug */,
+				BAF4B7D02C518A1400024EBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAF4B7E72C518AEA00024EBE /* Build configuration list for PBXNativeTarget "hexoboard Watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF4B7E82C518AEA00024EBE /* Debug */,
+				BAF4B7E92C518AEA00024EBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAF4B7EB2C518AEA00024EBE /* Build configuration list for PBXNativeTarget "hexoboard Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF4B7EC2C518AEA00024EBE /* Debug */,
+				BAF4B7ED2C518AEA00024EBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
