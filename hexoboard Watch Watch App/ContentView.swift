@@ -12,14 +12,14 @@ struct WatchKeyboardView: View {
     @State private var isUppercase: Bool = false
     
     // Define arrays for each row
-    let firstRow = ["T", "Y"]
-    let secondRow_a = ["E", "R"]
-    let secondRow_b = ["U", "I"]
-    let thirdRow_a = ["W", "123", "😊"]
-    let thirdRow_b = ["🌐", "⬆", "⌫", "O"]
-    let fourthRow = ["Q","S", "D", "F", "G", "H", "J", "K"]
-    let fifthRow = ["A", "N", "M", "L"]
-    let sixthRow = ["Z", "X", "C", "V", "B"]
+    let firstRow = ["R","T", "Y", "U","I"]
+    let secondRow_a = ["Q","W","E" ]
+    let secondRow_b = ["⬆", "O","P"]
+    let thirdRow_a = ["A", "S","123", "😊"]
+    let thirdRow_b = ["🌐",  "⌫","J",  "K"]
+    let fourthRow = [ "Z","D", "F", "G", "H", "M", "L"]
+    let fifthRow = [  "X","C", "V", "B","N"]
+    let sixthRow = [ ""]
     
     var body: some View {
         VStack {
@@ -30,6 +30,7 @@ struct WatchKeyboardView: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
                     .padding(.leading, 5)
+                    .frame(height: 15)
                 
                 Spacer()
                 
@@ -41,10 +42,10 @@ struct WatchKeyboardView: View {
                         .background(Color.blue.opacity(0.2))
                         .cornerRadius(4)
                 }
-                .frame(width: 40, height: 20)
+                .frame(width: 40, height: 10)
                 .padding(.trailing, 5)
             }
-            .padding(.top, 2)
+            .padding(.top, 0)
             
             ScrollView(.vertical) {
                 VStack(spacing: 0) {
@@ -89,11 +90,11 @@ struct WatchKeyboardView: View {
                             }
                         }
                         
-                        HStack(spacing: 0) {
-                            ForEach(sixthRow, id: \.self) { letter in
-                                createButton(letter: letter)
-                            }
-                        }
+//                        HStack(spacing: 0) {
+//                            ForEach(sixthRow, id: \.self) { letter in
+//                                createButton(letter: letter)
+//                            }
+//                        }
                     }
                     .padding(.bottom, 10)
                 }
