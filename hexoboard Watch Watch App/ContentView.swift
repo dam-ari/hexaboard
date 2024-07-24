@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import WatchConnectivity
 
 struct WatchKeyboardView: View {
     @State private var text: String = ""
@@ -30,14 +29,20 @@ struct WatchKeyboardView: View {
                     .cornerRadius(8)
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
+                    .padding(.leading, 5)
                 
-                Button(action: sendToiPhone) {
-                    Text("Send")
-                        .font(.footnote)
-                        .padding(4)
+                Spacer()
+                
+                Button(action: copyText) {
+                    Image(systemName: "doc.on.doc")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 20, height: 20)
                         .background(Color.blue.opacity(0.2))
                         .cornerRadius(4)
                 }
+                .frame(width: 40, height: 20)
+                .padding(.trailing, 5)
             }
             .padding(.top, 2)
             
@@ -91,27 +96,6 @@ struct WatchKeyboardView: View {
                         }
                     }
                     .padding(.bottom, 10)
-                    
-                    // Loop back
-                    VStack(spacing: 0) {
-                        HStack(spacing: 0) {
-                            ForEach(firstRow, id: \.self) { letter in
-                                createButton(letter: letter)
-                            }
-                        }
-                        
-                        HStack(spacing: 0) {
-                            ForEach(secondRow_a, id: \.self) { letter in
-                                createButton(letter: letter)
-                            }
-                            
-                            createButton(letter: "␣", width: 35)
-                            
-                            ForEach(secondRow_b, id: \.self) { letter in
-                                createButton(letter: letter)
-                            }
-                        }
-                    }
                 }
             }
             .padding()
@@ -140,7 +124,7 @@ struct WatchKeyboardView: View {
                 text.removeLast()
             }
         } else {
-            addText(letter)
+            addText(isUppercase ? letter.uppercased() : letter.lowercased())
         }
     }
     
@@ -152,12 +136,14 @@ struct WatchKeyboardView: View {
         isUppercase.toggle()
     }
     
-    private func sendToiPhone() {
-        guard WCSession.default.isReachable else {
-            // Handle error
-            return
+    private func copyText() {
+        // Present share sheet to copy text manually
+        guard !text.isEmpty else { return }
+        if let controller = WKExtension.shared().visibleInterfaceController {
+            controller.presentTextInputController(withSuggestions: [text], allowedInputMode: .plain) { _ in
+                // Text has been copied manually by the user.
+            }
         }
-        WCSession.default.sendMessage(["text": text], replyHandler: nil, errorHandler: nil)
     }
 }
 
@@ -165,9 +151,4 @@ struct WatchKeyboardView_Previews: PreviewProvider {
     static var previews: some View {
         WatchKeyboardView()
     }
-}
-
-
-#Preview {
-    WatchKeyboardView()
 }
