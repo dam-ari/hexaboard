@@ -12,14 +12,14 @@ struct WatchKeyboardView: View {
     @State private var isUppercase: Bool = false
     
     // Define arrays for each row
-    let firstRow = ["R","T", "Y", "U","I"]
-    let secondRow_a = ["Q","W","E" ]
-    let secondRow_b = ["⬆", "O","P"]
-    let thirdRow_a = ["A", "S","123", "😊"]
-    let thirdRow_b = ["🌐",  "⌫","J",  "K"]
-    let fourthRow = [ "Z","D", "F", "G", "H", "M", "L"]
-    let fifthRow = [  "X","C", "V", "B","N"]
-    let sixthRow = [ ""]
+    let firstRow = ["R", "T", "Y", "U", "I"]
+    let secondRow_a = ["Q", "W", "E"]
+    let secondRow_b = ["⬆", "O", "P"]
+    let thirdRow_a = ["A", "S", "123", "😊"]
+    let thirdRow_b = ["🌐", "⌫", "J", "K"]
+    let fourthRow = ["Z", "D", "F", "G", "H", "M", "L"]
+    let fifthRow = ["X", "C", "V", "B", "N"]
+    let sixthRow = [""] // Adjust as needed
     
     var body: some View {
         VStack {
@@ -30,7 +30,7 @@ struct WatchKeyboardView: View {
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
                     .padding(.leading, 5)
-                    .frame(height: 15)
+                    .frame(height: 10)
                 
                 Spacer()
                 
@@ -42,10 +42,9 @@ struct WatchKeyboardView: View {
                         .background(Color.blue.opacity(0.2))
                         .cornerRadius(4)
                 }
-                .frame(width: 40, height: 10)
+                .frame(width: 40, height: 20)
                 .padding(.trailing, 5)
             }
-            .padding(.top, 0)
             
             ScrollView(.vertical) {
                 VStack(spacing: 0) {
@@ -70,7 +69,11 @@ struct WatchKeyboardView: View {
                         
                         HStack(spacing: 0) {
                             ForEach(thirdRow_a, id: \.self) { letter in
-                                createButton(letter: letter)
+                                if letter == "123" {
+                                    createButton(letter: letter, width: 35)
+                                } else {
+                                    createButton(letter: letter)
+                                }
                             }
                             
                             ForEach(thirdRow_b, id: \.self) { letter in
@@ -89,12 +92,6 @@ struct WatchKeyboardView: View {
                                 createButton(letter: letter)
                             }
                         }
-                        
-//                        HStack(spacing: 0) {
-//                            ForEach(sixthRow, id: \.self) { letter in
-//                                createButton(letter: letter)
-//                            }
-//                        }
                     }
                     .padding(.bottom, 10)
                 }
@@ -124,6 +121,8 @@ struct WatchKeyboardView: View {
             if !text.isEmpty {
                 text.removeLast()
             }
+        } else if letter == "␣" {
+            addText(" ") // Add a space
         } else {
             addText(isUppercase ? letter.uppercased() : letter.lowercased())
         }
